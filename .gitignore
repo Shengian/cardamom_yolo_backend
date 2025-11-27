@@ -1,0 +1,36 @@
+# Ignore datasets
+train/
+valid/
+test/
+*.yaml
+
+# Ignore YOLO training runs except the final model
+runs/
+!runs/detect/
+!runs/detect/train3/
+!runs/detect/train3/weights/
+!runs/detect/train3/weights/best.pt
+
+# Ignore logs and temp files
+*.txt
+*.log
+*.md
+__pycache__/
+*.pyc
+
+# Ignore images not needed
+*.jpg
+*.jpeg
+*.png
+
+# Allow important images if you want
+# !elaichi_test.jpg
+
+# Environment folders
+.venv/
+env/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
